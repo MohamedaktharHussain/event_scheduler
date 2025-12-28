@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h3>Edit Resource</h3>
+
+<form method="POST">
+    <input class="form-control mb-2" name="resource_name" value="{{ resource.resource_name }}" required>
+    <input class="form-control mb-3" name="resource_type" value="{{ resource.resource_type }}" required>
+    <button class="btn btn-primary">Update</button>
+</form>
+
+{% endblock %}

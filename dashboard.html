@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="dashboard-hero">
+    <h1>DASHBOARD</h1>
+
+    <div class="dashboard-tiles">
+
+        <a href="{{ url_for('events.view_events') }}" class="tile tile-events">
+            MANAGE<br>EVENTS
+        </a>
+
+        <a href="{{ url_for('resources.view_resources') }}" class="tile tile-resources">
+            MANAGE<br>RESOURCES
+        </a>
+
+        <a href="{{ url_for('allocations.allocate') }}" class="tile tile-allocate">
+            ALLOCATE<br>RESOURCES
+        </a>
+
+        <a href="{{ url_for('reports.utilization') }}" class="tile tile-report">
+            UTILIZATION<br>REPORT
+        </a>
+
+    </div>
+</div>
+
+{% endblock %}
